@@ -259,7 +259,7 @@ var Main = (function() {
         }
     if (dropChanceYo > dropChanceD || dropChanceYo == 0) {
       console.info("test6");
-      textareastring = textareastring + ("Your current drop rate is: 1/" + Math.round(dropChanceD) + " or " + (1/dropChanceD).toFixed(2));
+      textareastring = textareastring + ("Your current drop rate is: 1/" + Math.round(dropChanceD) + " or " + ((1/dropChanceD)*100).toFixed(2));
       var chance = 1 / dropChanceD;
       for (var i = 10; i <= 100; i += 10) {
         var top_1 = (function(x) {
