@@ -220,13 +220,13 @@ var Main = (function() {
       dropPotential = document.getElementById("dropRatePotential").value;
     if (dropRateD < 100 && dropPotential >= 0.1) {
             console.info("test");
-            dropChanceS = "Your current drop rate is: " + Main.convertDecimalToFraction((1 / (dropRateD / dropPotential)));
+            dropChanceS = "Your current drop rate is: " + Main.convertDecimalToFraction((1 / (dropRateD / dropPotential))) + " or " + ((1/(dropRateD / dropPotential))*100).toFixed(2) + "%.";
             dropChanceYo = (dropRateD / dropPotential);
             dropChanceD = dropRateD / (1 + (dropRateB / 100));
         }
         else if (dropRateD < 100 && dropPotential >= -0.1 && dropPotential <= 0.1) {
             console.info("test1");
-            dropChanceS = "Your current drop rate is: 1/" + (dropRateD | 0);
+            dropChanceS = "Your current drop rate is: 1/" + (dropRateD | 0) + " or " + ((1/dropRateD)*100).toFixed(2) + "%.";
             dropChanceYo = dropRateD;
             dropChanceD = dropRateD / (1 + (dropRateB / 100));
         }
@@ -234,26 +234,26 @@ var Main = (function() {
             if (dropPotential >= 0.9 && dropPotential <= 1.1) {
                 if (dropRateD / (1 + (dropRateB / 100)) > 100) {
                     console.info("test2");
-                    dropChanceS = "Your current drop rate is: 1/100";
+                    dropChanceS = "Your current drop rate is: 1/100 or 1.00%.";
                     console.info("test");
                     dropChanceD = 100;
                 }
                 else {
                     console.info("test3");
-                    dropChanceS = "Your current drop rate is: 1/100";
+                    dropChanceS = "Your current drop rate is: 1/100 or 1.00%";
                     dropChanceD = dropRateD / (1 + (dropRateB / 100));
                 }
             }
             else {
                 console.info("test4");
-                dropChanceS = "Your current drop rate is: " + Main.convertDecimalToFraction((1 / (100 / dropPotential)));
+                dropChanceS = "Your current drop rate is: " + Main.convertDecimalToFraction((1/(100 / dropPotential))) + " or " + ((1 / (100 / dropPotential))*100).toFixed(2) + "%.";
                 dropChanceYo = (100 / dropPotential);
                 dropChanceD = dropRateD / (1 + (dropRateB / 100));
             }
         }
         else if (dropRateD >= 100 && dropPotential >= -0.1 && dropPotential <= 0.1) {
             console.info("test5");
-            dropChanceS = "Your current drop rate is: 1/" + (dropRateD | 0);
+            dropChanceS = "Your current drop rate is: 1/" + (dropRateD | 0) + " or " + ((1 / dropRateD)*100).toFixed(2) + "%.";
             dropChanceYo = (dropRateD | 0);
             dropChanceD = dropRateD / (1 + (dropRateB / 100));
         }
