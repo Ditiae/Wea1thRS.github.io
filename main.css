@@ -97,3 +97,8 @@ p {
   top: 700px;
   left: 700px;
 }
+img {
+  position: absolute;
+  top: 180px;
+  left: 560px;
+}
