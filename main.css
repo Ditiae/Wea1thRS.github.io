@@ -105,9 +105,15 @@ p1 {
   top: -435px;
   left: -30px;
 }
+p2 {
+  position: relative;
+  top:-400px;
+  left:60px;
+  font-size:36px;  
+}
 img {
   position: relative;
   top: -100px;
-  left: 0px;
+  left: -165px;
   z-index: 0;
 }
