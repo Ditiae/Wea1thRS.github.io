@@ -92,13 +92,15 @@ input.invalid {
   top: 0px;
   content: "%";
 }
-p {
-  position: absolute;
-  top: 700px;
-  left: 700px;
+p1 {
+  font-size: 24px;
+  position: relative;
+  top: -703px;
+  left: -565px;
 }
 img {
-  position: absolute;
-  top: 180px;
-  left: 560px;
+  position: relative;
+  top: -530px;
+  left: 340px;
+  z-index: 0;
 }
