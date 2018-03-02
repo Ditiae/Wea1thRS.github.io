@@ -40,9 +40,10 @@ textarea {
 }
 .button2 {
   position: absolute;
-  margin: 0px;
   width: 300px;
-  top: 430px;
+  top: 450px;
+  transition: all 0.5s;
+  cursor: pointer;
 }
 .autocomplete-items {
   position: absolute;
@@ -73,7 +74,7 @@ textarea {
 /* Style the form */
 #regForm {
   background-color: #ffffff;
-  margin: 80px auto;
+  margin: 100px auto;
   padding: 40px;
   width: 70%;
   min-width: 300px;
